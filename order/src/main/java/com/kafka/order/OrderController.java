@@ -27,4 +27,12 @@ public class OrderController {
         orderProducer.produceOrder(orderWithId);
         return "saved in orders DB and produced to kafka order_topic";
     }
+
+    public void updateOrder(Long orderId) {
+        Order order = orderRepository.findById(orderId).get();
+        order.setShipped(true);
+        orderRepository.save(order);
+        System.out.println(order);
+        System.out.println("Order is shipped");
+    }
 }
