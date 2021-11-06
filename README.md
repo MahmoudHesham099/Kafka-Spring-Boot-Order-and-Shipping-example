@@ -1,6 +1,6 @@
 # Kafka Spring Boot Order & Shipping example
 
-YouTube Video Link:
+YouTube Video Link: https://youtu.be/bdq2g6y3BtY
 
 ## Flow Diagram
 
